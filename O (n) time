@@ -1,0 +1,20 @@
+# Big-O: worst case for linear search
+names = ['Aarav', 'Priya', 'Dev', 'Meera', 'Kabir']
+n = len(names)        # n = 5
+
+# Worst case: target is the LAST element
+target = 'Kabir'
+steps  = 0
+for name in names:
+    steps += 1
+    if name == target:
+        break
+
+print('Target   :', target)
+print('Steps    :', steps, '(worst case = n =', n, ')')
+print('Big-O    : O(n)')   # upper bound -- never more than n steps
+
+# Output:
+# Target   : Kabir
+# Steps    : 5  (worst case = n = 5)
+# Big-O    : O(n)
